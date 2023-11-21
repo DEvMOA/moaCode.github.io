@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
       this.zainabFaceSnap = new FaceSnap(
         'Zainab',
         "Chaque jour avec toi est une aventure, une histoire captivante où nos rires créent les chapitres et nos regards écrivent les vers. Ta présence est le trésor qui illumine mes jours, et ta tendresse est le refuge où mon âme trouve la paix.",
-        "/assets/zainab.jpg",
+        "assets/zainab.jpg",
         new Date(),
         9999
       );
