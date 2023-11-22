@@ -7,33 +7,31 @@ import { FaceSnap } from './models/face-snap.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  zainabFaceSnap!: FaceSnap
-  zainabFaceSnap2!: FaceSnap
-  zainabFaceSnap3!: FaceSnap
+  hawaFaceSnap!: FaceSnap[]
 
   ngOnInit(): void {
-      this.zainabFaceSnap = new FaceSnap(
-        'HAWA',
-        "Chaque jour avec toi est une aventure, une histoire captivante où nos rires créent les chapitres et nos regards écrivent les vers. Ta présence est le trésor qui illumine mes jours, et ta tendresse est le refuge où mon âme trouve la paix.",
-        './assets/hawa.jpg',
-        new Date(),
-        9999
-      );
-
-      this.zainabFaceSnap2 = new FaceSnap(
-        'HAWA',
-        "Dans le doux éclat de chaque instant partagé, je trouve la lumière de mon bonheur. Ton amour est une mélodie douce qui résonne dans mon cœur, une symphonie envoûtante qui danse dans l'air que nous partageons.",
-        "./assets/hawa2.jpg",
-        new Date(),
-        9999
-      );
-      
-      this.zainabFaceSnap3 = new FaceSnap(
-        'HAWA',
-        "Tes yeux sont des étoiles qui illuminent mes nuits, et ta voix est une douce mélodie qui calme les tempêtes de la vie. À travers les hauts et les bas, c'est avec toi que je veux parcourir ce voyage qu'est l'amour.",
-        "./assets/hawa3.jpg",
-        new Date(),
-        9999
-      );
-  }
- }
+    this.hawaFaceSnap = [ 
+      {
+        title: 'HAWA',
+        description: "Chaque jour avec toi est une aventure, une histoire captivante où nos rires créent les chapitres et nos regards écrivent les vers. Ta présence est le trésor qui illumine mes jours, et ta tendresse est le refuge où mon âme trouve la paix.",
+        imageUrl:'./assets/hawa.jpg',
+        createdDate: new Date(),
+        snaps: 9999 
+      },
+      {
+          title: 'HAWA',
+          description: "Chaque jour avec toi est une aventure, une histoire captivante où nos rires créent les chapitres et nos regards écrivent les vers. Ta présence est le trésor qui illumine mes jours, et ta tendresse est le refuge où mon âme trouve la paix.",
+          imageUrl: './assets/hawa2.jpg',
+          createdDate: new Date(),
+          snaps: 9999
+      },
+      {
+            title: 'HAWA',
+            description: "Chaque jour avec toi est une aventure, une histoire captivante où nos rires créent les chapitres et nos regards écrivent les vers. Ta présence est le trésor qui illumine mes jours, et ta tendresse est le refuge où mon âme trouve la paix.",
+            imageUrl: './assets/hawa3.jpg',
+            createdDate: new Date(),
+            snaps: 9999 
+      }
+    ];
+  }    
+}
